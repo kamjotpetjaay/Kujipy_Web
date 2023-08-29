@@ -1,8 +1,25 @@
 import styled from 'styled-components';
 
-export const NavbarWrapper = styled.div`
+export const NavbarKujipy = styled.div`
   background-color: black;
   font-size: 32px;
   color: white;
-  height: 100%
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+`;
+
+export const NavbarLogoStyle = styled.div`
+  width: 5%;
+  margin-left: 10px;
+  margin-right: 10px;
+`;
+
+export const NavbarElementsStyle = styled.div`
+  background-color: black;
+  height: 100%;
+  width: 90%;
+  margin-left: 20px;
+  margin-right: 20px;
 `;

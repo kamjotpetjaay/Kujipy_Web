@@ -1,9 +1,19 @@
 import React from 'react';
 import logo from './assets/kujipylogo.jpg';
+import imagen1 from './assets/banda.jpg';
+import imagen2 from './assets/tiptsy2.jpg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import ImageSlider, { Imagen } from './components/ImageSlider/ImageSlider';
 
 function App() {
+  
+  
+  const galeriaImagenes: Imagen[] = [
+    { url: imagen1, name: "banda"},
+    { url: imagen2, name: "tiptsy2"}
+  ]
+
   return (
     <div className="App">
       <div className='NavBar'>
@@ -11,29 +21,21 @@ function App() {
       </div>
       <div className='Content'>
         <header className="App-header">
-          <div className='logo-kujipy'>
-            <img src={logo} className="App-logo" alt="logo" />
-          </div>
           <h1>
             BIENVENIDO A PAGINA KUJIPY
           </h1>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            si
-          </a>
-          <div className='Content'>
-
-          <h2>
-            Aqui podras ver contenido relacionado a nuestro grupo, asi como tambien nuestros proximos eventos y presentaciones.
-          </h2>
-          </div>
-
-          
         </header>
+        <div className='Description'>
+          <h5>
+            Aqui podras ver contenido relacionado a nuestro grupo, asi como tambien nuestros proximos eventos y presentaciones.
+          </h5>
+        </div>
+        <div className='Galery-main'>
+          <h5>
+            Aqui podemos meter una slider, imagenes que vayan cambiando....
+          </h5>
+          <ImageSlider galeriaImagenes={ galeriaImagenes} />
+        </div>
       </div>
       <div className='FootPage'>
         "Derechos casi reservados kujipy" 

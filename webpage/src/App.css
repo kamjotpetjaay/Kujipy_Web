@@ -8,12 +8,15 @@
 }
 
 .NavBar {
-  height: 15%;
+  height: 5%;
 }
 
 .Content {
-  height: 95%;
+  height: 90%;
   background-color: #2e618a;
+  background-image: url(./assets/tiptsy.jpg);
+  padding: 30px;
+  overflow-y: scroll;
 }
 
 .FootPage{
@@ -26,7 +29,8 @@
 } */
 
 .App-logo {
-  height: 10vmin;
+  height: 100%;
+  width: 60%;
   pointer-events: none;
 }
 
@@ -36,8 +40,13 @@
   }
 } */
 
+/* @media (prefers-reduced-motion: no-preference) {
+  .Galery-main {
+    animation: App-galery-slide infinite 20s linear;
+  }
+} */
+
 .App-header {
-  background-color: #257b91;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,11 +59,11 @@
   color: #fb6161;
 }
 
-@keyframes App-logo-spin {
+@keyframes App-galery-slide {
   from {
-    transform: rotate(0deg);
+    transform: rotateZ(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(120deg);
   }
 }
