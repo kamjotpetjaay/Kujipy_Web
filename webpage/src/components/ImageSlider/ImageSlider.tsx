@@ -45,7 +45,6 @@ const ImageSlider = ({galeriaImagenes}: ImageSliderProps) => {
          slides[i].style.display = "none" ;
          dots[i].classList.remove('active');
       }
-      console.log(slideIndex)
       slideIndex++
       if(slideIndex > slides.length) {
          slideIndex = 1
