@@ -1,11 +1,15 @@
 import React, { FC } from 'react';
-import { NavbarElementWrapper } from './NavbarElement.styled';
+import { NavbarElementWrapper, SpanStyle, ButtonStyle } from './NavbarElement.styled';
 
-interface NavbarElementProps {}
+interface NavbarElementProps {
+   texto: string
+}
 
-const NavbarElement: FC<NavbarElementProps> = () => (
+const NavbarElement: FC<NavbarElementProps> = ({texto}: NavbarElementProps) => (
  <NavbarElementWrapper>
-    NavbarElement Component
+   <ButtonStyle href= "#" >
+      <SpanStyle>{texto}</SpanStyle>
+   </ButtonStyle>
  </NavbarElementWrapper>
 );
 

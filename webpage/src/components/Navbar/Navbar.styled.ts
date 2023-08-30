@@ -17,9 +17,8 @@ export const NavbarLogoStyle = styled.div`
 `;
 
 export const NavbarElementsStyle = styled.div`
-  background-color: black;
   height: 100%;
-  width: 90%;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 `;

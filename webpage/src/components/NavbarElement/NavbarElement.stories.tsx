@@ -5,7 +5,7 @@ export default {
   title: "NavbarElement",
 };
 
-export const Default = () => <NavbarElement />;
+export const Default = () => <NavbarElement texto='xxx'/>;
 
 Default.story = {
   name: 'default',

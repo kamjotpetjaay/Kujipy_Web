@@ -23,8 +23,7 @@
 }
 .Content {
   height: 90%;
-  background-color: #2e618a;
-  background-image: url(./assets/tiptsy.jpg);
+  background-color: #282c34;
   padding: 30px;
   overflow-y: scroll;
 }

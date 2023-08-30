@@ -16,13 +16,15 @@ function App() {
 
   return (
     <div className="App">
-      
-      <nav> 
+      <div className='NavBar'>
+        <Navbar/>
+      </div>
+      {/* <nav> 
         <a href= "#" className= "Nav-enlace">INICIO</a>
         <a href= "#" className= "Nav-enlace">EVENTOS</a>
         <a href= "#" className= "Nav-enlace">CONTRATACIONES</a>
         
-      </nav>
+      </nav> */}
       <div className='Content'>
         <header className="App-header">
           <h1>
@@ -35,9 +37,6 @@ function App() {
           </h2>
         </div>
         <div className='Galery-main'>
-          <h5>
-            Aqui podemos meter una slider, imagenes que vayan cambiando....
-          </h5>
           <ImageSlider galeriaImagenes={ galeriaImagenes} />
         </div>
       </div>
