@@ -16,9 +16,13 @@ function App() {
 
   return (
     <div className="App">
-      <div className='NavBar'>
-        <Navbar/>
-      </div>
+      
+      <nav> 
+        <a href= "#" className= "Nav-enlace">INICIO</a>
+        <a href= "#" className= "Nav-enlace">EVENTOS</a>
+        <a href= "#" className= "Nav-enlace">CONTRATACIONES</a>
+        
+      </nav>
       <div className='Content'>
         <header className="App-header">
           <h1>
@@ -26,9 +30,9 @@ function App() {
           </h1>
         </header>
         <div className='Description'>
-          <h5>
+          <h2>
             Aqui podras ver contenido relacionado a nuestro grupo, asi como tambien nuestros proximos eventos y presentaciones.
-          </h5>
+          </h2>
         </div>
         <div className='Galery-main'>
           <h5>

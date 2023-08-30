@@ -7,10 +7,20 @@
   
 }
 
-.NavBar {
-  height: 5%;
+.Nav-enlace {
+  background-color: aquamarine;
+  color: red;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
 }
-
+.Nav-enlace:hover {
+  background-color: blue;
+}
+.nav {
+  background-color: #fb6161;
+  padding: auto;
+}
 .Content {
   height: 90%;
   background-color: #2e618a;
@@ -63,4 +73,9 @@
   0% {z-index: 0}
   33.32% {z-index: 0}
   33.33% {z-index: -1}
+}
+
+.Description {
+  background-color: rgb(29, 177, 167);
+  color: red;
 }
