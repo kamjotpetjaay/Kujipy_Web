@@ -40,11 +40,11 @@
   }
 } */
 
-/* @media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   .Galery-main {
-    animation: App-galery-slide infinite 20s linear;
+    color: #2e8a5c;
   }
-} */
+}
 
 .App-header {
   display: flex;
@@ -60,10 +60,7 @@
 }
 
 @keyframes App-galery-slide {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotate(120deg);
-  }
+  0% {z-index: 0}
+  33.32% {z-index: 0}
+  33.33% {z-index: -1}
 }
