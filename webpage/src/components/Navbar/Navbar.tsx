@@ -11,11 +11,11 @@ const Navbar: FC<NavbarProps> = () => (
         <NavbarLogo/>
     </NavbarLogoStyle>
     <NavbarElementsStyle>
-        <NavbarElement texto = "INICIO"/>
-        <NavbarElement texto = "EVENTOS"/>
-        <NavbarElement texto = "CONTRATACIONES"/>
-        <NavbarElement texto = "GALERIA"/>
-        <NavbarElement texto = "ACERCA DE"/>
+        <NavbarElement texto = "INICIO" link='/'/>
+        <NavbarElement texto = "EVENTOS" link='/events'/>
+        <NavbarElement texto = "CONTRATACIONES" link='/hiring'/>
+        <NavbarElement texto = "GALERIA" link='/galery'/>
+        <NavbarElement texto = "ACERCA DE" link='/about'/>
     </NavbarElementsStyle>
  </NavbarKujipy>
 );

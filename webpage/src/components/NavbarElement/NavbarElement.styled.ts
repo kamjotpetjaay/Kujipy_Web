@@ -5,16 +5,6 @@ export const NavbarElementWrapper = styled.div`
     margin: 0 auto;
 `;
 
-export const ButtonStyle = styled.a`
-    box-sizing: border-box;
-    color: #00a84f;
-    background: transparent;
-    display: inline-block;
-    text-decoration: none;
-    letter-spacing: 1px;
-    margin: 0 auto;
-    height: 100%;
-`;
 
 export const SpanStyle = styled.span`
     align-items: center;

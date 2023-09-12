@@ -51,6 +51,8 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .Galery-main {
+    display: flex;
+    flex-direction: row;
     color: #2e8a5c;
   }
 }
@@ -75,6 +77,14 @@
 }
 
 .Description {
-  background-color: rgb(29, 177, 167);
-  color: red;
+  background-color: rgb(59, 80, 80);
+  color: rgb(31, 2, 2);
+  border-radius: 10px;
+  width: fit-content;
+  margin: 2px;
+  padding: 5px;
+}
+
+.TextDescription {
+  color: rgb(209, 214, 183);
 }

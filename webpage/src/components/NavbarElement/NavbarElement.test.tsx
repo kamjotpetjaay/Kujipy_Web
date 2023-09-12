@@ -6,7 +6,7 @@ describe('<NavbarElement />', () => {
   let component;
 
   beforeEach(() => {
-    component = shallow(<NavbarElement texto='holahola'/>);
+    component = shallow(<NavbarElement texto='holahola' link='/'/>);
   });
 
   test('It should mount', () => {

@@ -1,7 +1,6 @@
 {
   "usesTypeScript": true,
   "usesStyledComponents": true,
-  "testLibrary": "Enzyme",
   "component": {
     "default": {
       "path": "src/components",

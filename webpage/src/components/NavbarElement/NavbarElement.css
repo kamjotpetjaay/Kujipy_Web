@@ -1,0 +1,10 @@
+.ButtonStyle {
+    box-sizing: border-box;
+    color: #00a84f;
+    background: transparent;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    height: 100%;
+}

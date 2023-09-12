@@ -4,7 +4,7 @@ const LazyNavbarElement = lazy(() => import('./NavbarElement'));
 
 const NavbarElement = (props: JSX.IntrinsicAttributes & { children?: React.ReactNode; }) => (
   <Suspense fallback={null}>
-    <LazyNavbarElement texto='hola' {...props} />
+    <LazyNavbarElement texto='hola' link='/' {...props} />
   </Suspense>
 );
 
