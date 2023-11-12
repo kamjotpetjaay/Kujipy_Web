@@ -6,6 +6,9 @@
   flex-direction: column;
   
 }
+.NavBar {
+  height: 10%;
+}
 
 .Nav-enlace {
   background-color: aquamarine;
@@ -22,7 +25,7 @@
   padding: auto;
 }
 .Content {
-  height: 90%;
+  height: 80%;
   background-color: #282c34;
   padding: 30px;
   overflow-y: scroll;
@@ -30,7 +33,14 @@
 
 .FootPage{
   height: 5%;
+  display: flex;
+  align-items: center;
   background-color: #2e8a5c;
+}
+
+.FootPageText {
+  display: flex;
+  margin-left: 20px;
 }
 
 /* .logo-kujipy {
@@ -39,7 +49,7 @@
 
 .App-logo {
   height: 100%;
-  width: 60%;
+  width: 100%;
   pointer-events: none;
 }
 
@@ -87,4 +97,19 @@
 
 .TextDescription {
   color: rgb(209, 214, 183);
+}
+
+.HeaderStaticBar {
+  height: 5%;
+}
+.ImageStaticBar {
+  height: 100%;
+}
+.ImageBackground{
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-image: url("./assets/Xaam.png");
+  height:100%;
+  max-width:100%;
+  max-height:100%;
 }

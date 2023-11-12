@@ -1,4 +1,5 @@
 import "./events.css"
+
 const Events = () => {
 
     const newEvents = () =>{
@@ -27,10 +28,12 @@ const Events = () => {
         <div className='Content'>
             <div className="Events-container">
                 <div className="Events-buttons"></div>
-                <div className="Events-new">
-                    {newEvents()}
+                <div className="Events-text">
+                    <div className="Events-new">
+                        {newEvents()}
+                    </div>
+                    <div className="Events-past"></div>
                 </div>
-                <div className="Events-past"></div>
             </div>
         </div>
     )

@@ -16,6 +16,7 @@ const Navbar: FC<NavbarProps> = () => (
         <NavbarElement texto = "CONTRATACIONES" link='/hiring'/>
         <NavbarElement texto = "GALERIA" link='/galery'/>
         <NavbarElement texto = "ACERCA DE" link='/about'/>
+        <NavbarElement texto = "TLAHUITOLTEPEC" link='/tlahuitoltepec'/>
     </NavbarElementsStyle>
  </NavbarKujipy>
 );
