@@ -12,9 +12,14 @@
 }
 
 .Events-new{
-    color: aliceblue;
+    color: rgb(141, 228, 255);
 }
 
 .Events-past{
-    color: aliceblue;
+    color: rgb(193, 189, 255);
+}
+
+.Event-title{
+    color: rgb(253, 151, 151);
+    font-size: x-large;
 }

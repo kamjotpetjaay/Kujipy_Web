@@ -1,31 +1,53 @@
 import React from 'react';
 
 const KujipySchema = () => {
-  const schema = {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "http://www.kujipy.com/events"
+  const eventSchema = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Festival Kojpk Jää'y kujipy",
+    "startDate": "2023-12-11T00:00",
+    "endDate": "2023-12-11T23:59",
+    "location": {
+      "@type": "Place",
+      "name": "Santa Maria Tlahuitoltepec",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Santa Maria Tlahuitoltepec",
+        "addressRegion": "Oaxaca",
+        "addressCountry": "Mexico"
+      }
     },
-    "headline": "No te Pierdas el Espectacular Encuentro Musical con Kujipy",
-    /* "image": {
-      "@type": "ImageObject",
-      "url": "http://www.kujipy.com/images/your-post-image.jpg",
-      "height": 800,
-      "width": 1200
+    "description": "¡Celebra con nosotros el Festival Kojpk Jää'y en honor a la Virgen de Guadalupe! Disfruta de una mezcla única de trap, rap, reggae, suun y balkan.",
+    "performer": [
+      {
+        "@type": "MusicGroup",
+        "name": "Kujipy"
+      },
+      {
+        "@type": "MusicGroup",
+        "name": "Los Pream"
+      },
+      {
+        "@type": "MusicGroup",
+        "name": "Tepachy"
+      }
+    ],
+    /* "url": "URL_DE_TU_PAGINA_WEB",
+    "image": "URL_DE_LA_IMAGEN_DEL_EVENTO",
+    "isAccessibleForFree": false, */
+    /* "offers": {
+      "@type": "Offer",
+      "url": "URL_DE_VENTA_DE_BOLETOS",
+      "price": "PRECIO_DE_BOLETOS",
+      "priceCurrency": "MXN",
+      "availability": "https://schema.org/InStock"
     }, */
-    "author": {
-      "@type": "Person",
-      "name": "kujipy"
-    },
-    "datePublished": "2023-09-20",
-    "description": "Evento que se llevará a cabo en Santa María Tlahuitoltepec, abajo de la cancha municipa, en el bar KONKO."
+    "keywords": ["FestivalKojpkJaay", "Música", "Cultura", "VirgenDeGuadalupe", "SantaMariaTlahuitoltepec", "kujipy", "LosPream", "Tepachy"]
   };
 
   return (
     <script type="application/ld+json">
-      {JSON.stringify(schema)}
+      {JSON.stringify(eventSchema)}
     </script>
   );
 };

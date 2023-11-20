@@ -18,5 +18,9 @@ export const SpanStyle = styled.span`
     &:hover ${this} {
         background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
         padding: 0 10px;
-    }
+    };
+    &:active  ${this} {
+        background-image: linear-gradient(to right, #002175 0%, #00a750 100%);
+        padding: 0 10px;
+    };
 `;
