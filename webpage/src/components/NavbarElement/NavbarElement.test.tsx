@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import NavbarElement from './NavbarElement';
 
 
+
 describe('<NavbarElement />', () => {
   let component;
 

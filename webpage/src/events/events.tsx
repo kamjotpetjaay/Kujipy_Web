@@ -1,11 +1,31 @@
 import "./events.css"
 import eventoDiciembre2023 from '../assets/eventoDiciembre2023.jpg';
+import eventoAgosto2024 from '../assets/eventoAgosto2024.jpg'
 
 const Events = () => {
 
     const newEvents = () =>{
         return (
+
             <div>
+                <h2>
+                    Kujipy en el concierto “Niman Axkan (Ahora mismo en náhuatl)”
+                </h2>
+                <h3>
+                Un gran honor ser parte de este concierto que daremos nada más y nada menos que en el Palacio de Bellas Artes, es un concierto en homenaje a la nueva música indígena contemporánea de nuestro país, haciendo particular énfasis en lo que se está creando actualmente y contará con grandes invitados🔥🔥🔥🔥
+                </h3>
+                <h3>
+                Te esperamos el sábado 10 de agosto a las 19 h, en la Sala Principal del Palacio de Bellas Artes
+                </h3>
+
+                <img src={eventoAgosto2024} id={"eventoAgosto2024"} alt={"eventoAgosto2024"} width="100%"></img>
+            </div>
+        )
+    }
+    const eventsPast = () =>{
+        return (
+            <div className="past1">
+                <div>
                 <h2>
                     ¡Festival KOJKP JÄÄ'Y: Celebrando en Honor a la Virgen de Guadalupe en Santa Maria Tlahuitoltepec!
                 </h2>
@@ -31,11 +51,8 @@ const Events = () => {
                 </h2>
 
             </div>
-        )
-    }
-    const eventsPast = () =>{
-        return (
-            <div>
+
+            <div className="past2">
                 <h2>
                     ¡No te Pierdas el Espectacular Encuentro Musical con Kujipy!
                 </h2>
@@ -53,6 +70,7 @@ const Events = () => {
                     ¡Únete a nosotros para una noche mágica llena de música, cultura y tradición! El 30 de septiembre de 2023, la aclamada agrupación Kujipy, orgullosamente originaria de Santa María Tlahuitoltepec Mixe, Oaxaca, estará en concierto en el tradicional bar Konko.
                 </h3>
             </div>
+        </div>
         )
     }
     return (

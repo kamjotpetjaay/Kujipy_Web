@@ -9,5 +9,6 @@
       "withStory": true,
       "withLazy": true
     }
-  }
+  },
+  "testLibrary": "Enzyme"
 }
