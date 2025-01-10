@@ -1,4 +1,11 @@
 import "./hiring.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faYoutube,
+    faFacebook,
+    faSpotify,
+    faInstagram
+  } from "@fortawesome/free-brands-svg-icons";
 
 const Hiring = () => {
 
@@ -17,10 +24,26 @@ const Hiring = () => {
                 <p>
                     <b>Whatsapp 2:</b> +52 221 441 8649
                 </p>
-                <p>
-                    <b>Facebook:</b> <a href="https://www.facebook.com/kujipy" target="_blank" >kujipy</a>
-                </p>
-
+                
+                <div className="social-container">
+                    <h3>Síguenos en nuestras redes sociales:</h3>
+                    <a href="https://www.youtube.com/@kujipyoficial8421"
+                        className="youtube social">
+                        <FontAwesomeIcon icon={faYoutube} size="2x" />
+                    </a>
+                    <a href="https://www.facebook.com/kujipy"
+                        className="facebook social">
+                        <FontAwesomeIcon icon={faFacebook} size="2x" />
+                    </a>
+                    <a href="https://open.spotify.com/intl-es/artist/3tDuuuTkPprgYHtL7QsvXs?si=3TNj5zmNSXmqsO4mMHPwiQ" className="spotify social">
+                        <FontAwesomeIcon icon={faSpotify} size="2x" />
+                    </a>
+                    <a href="https://www.instagram.com/kujipy"
+                        className="instagram social">
+                        <FontAwesomeIcon icon={faInstagram} size="2x" />
+                    </a>
+                </div>
+            
                 <h5>
                     ¡No olvides dejar tu like en nuestra página de facebook!
                 </h5>

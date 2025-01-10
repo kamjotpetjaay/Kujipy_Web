@@ -10,6 +10,13 @@ import Galery from './galery/galery';
 import xaam from './assets/Xaam.png';
 import KujipySchema from './schema_markup/KujipySchema';
 import Tlahuitoltepec from './tlahuitoltepec/tlahuitoltepec';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faYoutube,
+    faFacebook,
+    faSpotify,
+    faInstagram
+  } from "@fortawesome/free-brands-svg-icons";
 
 function NoMatch() {
   return (
@@ -43,7 +50,28 @@ function App() {
           <Route path="*" element={<NoMatch />} />
         </Routes>
         <div className='FootPage'>
-          <div className='FootPageText'> <b>Derechos reservados @kujipy 2023</b></div>
+          <div className='FootPageText'>
+            <div className='social-media-container-footer'>
+              <a href="https://www.youtube.com/@kujipyoficial8421"
+                        className="youtube social">
+                        <FontAwesomeIcon icon={faYoutube} size="2x" />
+                    </a>
+                    <a href="https://www.facebook.com/kujipy"
+                        className="facebook social">
+                        <FontAwesomeIcon icon={faFacebook} size="2x" />
+                    </a>
+                    <a href="https://open.spotify.com/intl-es/artist/3tDuuuTkPprgYHtL7QsvXs?si=3TNj5zmNSXmqsO4mMHPwiQ" className="spotify social">
+                        <FontAwesomeIcon icon={faSpotify} size="2x" />
+                    </a>
+                    <a href="https://www.instagram.com/kujipy"
+                        className="instagram social">
+                        <FontAwesomeIcon icon={faInstagram} size="2x" />
+                    </a>
+            </div>
+            <div className='derechos'>
+              <b>Derechos reservados @kujipy 2025</b>
+            </div>
+            </div>
         </div>
       </div>
       <KujipySchema/>

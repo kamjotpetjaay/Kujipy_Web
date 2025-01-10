@@ -42,7 +42,7 @@ const KujipySchema = () => {
       "priceCurrency": "MXN",
       "availability": "https://schema.org/InStock"
     }, */
-    "keywords": ["FestivalKojpkJaay", "Música", "Cultura", "VirgenDeGuadalupe", "SantaMariaTlahuitoltepec", "kujipy", "LosPream", "Tepachy"]
+    "keywords": ["FestivalKojpkJaay", "Música", "Cultura", "VirgenDeGuadalupe", "SantaMariaTlahuitoltepec", "kujipy", "LosPream", "Tepachy", "Tlahuitoltepec", "Ojitos YY", "Yessi gomez", "Zempoal", "xaam"]
   };
 
   return (

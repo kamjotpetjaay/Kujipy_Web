@@ -1,6 +1,7 @@
-import Sound from 'react-sound';
-import baltipstySound from '../assets/fondoKujipy.mp3';
-import { useEffect, useState } from 'react';
+import React from 'react';
+/* import Sound from 'react-sound';
+import baltipstySound from '../assets/fondoKujipy.mp3';*/
+import { useState } from 'react'; 
 import Images from './images'
 import './galery.css'
 import useModal from '../hooks/useModal';
@@ -8,21 +9,21 @@ import ModalImage from './modal-image';
 import { ImagenType } from '../components/Slider/Slider';
 
 
-enum SOUNDSTATUS {
+/* enum SOUNDSTATUS {
     PLAYING = 'PLAYING',
     STOPPED = 'STOPPED',
     PAUSED = 'PAUSED'
 }
-
+ */
 const Galery = () =>{
 
-    const [isPlaying, setIsPlaying] = useState<boolean>(false)
+    //const [isPlaying, setIsPlaying] = useState<boolean>(false)
     const { isOpen, toggle } = useModal();
     const [actualImage, setActualImage] = useState<ImagenType>()
 
-    useEffect(() => {
+    /* useEffect(() => {
         setIsPlaying(true)
-      },[]); 
+      },[]);  */
 
     const openFullscreenModal =  (item: ImagenType) =>{
         console.log("entra en open full screen modal")
@@ -46,6 +47,7 @@ const Galery = () =>{
                         {
                             Images.map( item => (
                                 <img 
+                                key={item.text}
                                 className="img-galeria" 
                                 src={item.src} id={item.text} alt={item.text} onClick={() => openFullscreenModal(item)}></img>
                             )
@@ -56,13 +58,13 @@ const Galery = () =>{
                 </div>
                 <ModalImage isOpen={isOpen} toggle={toggle} image={actualImage} images={Images} closeModal={closeFullScreenModal}></ModalImage>
             </div>
-            <Sound
+            {/* <Sound
                 url={baltipstySound}
                 playStatus={ isPlaying ? SOUNDSTATUS.PLAYING: SOUNDSTATUS.STOPPED}
                 autoLoad={true}
                 loop={true}
                 volume={50}
-            />
+            /> */}
         </div>
     )
 }

@@ -54,7 +54,7 @@ const ImageSlider = ({galeriaImagenes}: ImageSliderProps) => {
          if(timeoutId) {
             clearTimeout(timeoutId);
          }
-         timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+         timeoutId = setTimeout(showSlides, 20000); // Change image every 20 seconds
       }
       
    }
